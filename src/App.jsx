@@ -3,6 +3,7 @@ import RootLayout from "./ui/RootLayout"
 import Home from "./pages/Home"
 import CounterView from "./features/counter/CounterView"
 import InputField from "./features/inputField/InputField"
+import ToggleView from "./features/Toggle/ToggleView"
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
         { index: true, element: <Home /> },
         { path: 'counter', element: <CounterView /> },
         { path: 'inputField', element: <InputField /> },
+        { path: 'toggle', element: <ToggleView /> },
       ]
     }
   ])
