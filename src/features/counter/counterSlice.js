@@ -16,8 +16,11 @@ export const counterSlice = createSlice({
       if (state.count > 0) {
         state.count = state.count - 1;
       }
+    },
+    reset: (state, action) => {
+      state.count = 0
     }
   }
 })
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement, reset } = counterSlice.actions;
